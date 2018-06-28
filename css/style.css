@@ -3,7 +3,7 @@ h1 {
   height: 300px;
   width: 100%;
   background-image: url('../img/To Do List.png');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -17,8 +17,6 @@ ul{
     display: block;
     text-align: center;
 }
-
-
 
 /* list items */
 ul li {
@@ -57,6 +55,12 @@ ul li:hover {
 /* edit button */
   .editButton {
       float: right;
+      padding: 0px 15px;
+      color: black;
+      text-align: center;
+      font-size: 10px;
+      border-radius: 0;
+      height: 20px;
   }
 
   .editButton:hover {
@@ -67,6 +71,12 @@ ul li:hover {
 /* delete button */
   .deleteButton {
       float: right;
+      padding: 0px 12px;
+      color: black;
+      text-align: center;
+      font-size: 10px;
+      border-radius: 0;
+      height: 20px;
   }
 
   .deleteButton:hover {
