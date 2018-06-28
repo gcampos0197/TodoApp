@@ -2,12 +2,12 @@
 function addListItem(input) {
   console.log(input);
   if(input === ''){
-    alert('Please enter a to do item.')
+    alert('Please enter a to do item.') //Good edge casing!! -RJH
   } else  {
     var li = document.createElement('li');
     var ul = document.getElementById('todo_list');
     var text = document.createTextNode(input);
-    var editButton = document.createElement("button");
+    var editButton = document.createElement("button"); //Is there a reason you used var s instead of let s? -RJH
     editButton.innerHTML = "Edit";
     editButton.className = 'editButton';
     editButton.onclick = editItem;
@@ -36,7 +36,7 @@ addBtn.addEventListener('click', function (event) {
  function deleteItem(event) {
   let li = event.target.parentNode;
   let deleteLi = confirm("Are you sure you want to delete this item?");
-  if (deleteLi === true) {
+  if (deleteLi === true) { //In this case since you are just checking the truthy-ness you can just do if(deleteLi) {... And since this is just an if check, you can write it all in one line :) -RJH
       li.parentNode.removeChild(li);
     }
 }
@@ -48,10 +48,10 @@ function editItem(event) {
   let newInput = prompt("Edit this item:");
   console.log('value',li.firstChild)
   if (newInput === '') {
-          alert("Try again.");
-      } else {
+          alert("Try again."); //Good edge casing -RJH
+      } else { 
       let newChildInput = document.createTextNode(newInput);
-      li.replaceChild(newChildInput, li.firstChild);
+      li.replaceChild(newChildInput, li.firstChild); //EXCELLENT use of Google and replaceChild!!! -RJH
       }
 }
 
