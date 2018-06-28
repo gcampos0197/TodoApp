@@ -1,0 +1,82 @@
+h1 {
+  text-shadow: 2px 2px grey;
+  height: 300px;
+  width: 100%;
+  background-image: url('../img/To Do List.png');
+  background-size: 30%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+ul{
+  margin: 0 300px;
+  padding: 100px;
+}
+
+.input-feild {
+    display: block;
+    text-align: center;
+}
+
+
+
+/* list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+/* zebra-stripes*/
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* Add button */
+.btn {
+    padding: 0px 12px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background-color: #BBBBBA;
+}
+
+/* edit button */
+  .editButton {
+      float: right;
+  }
+
+  .editButton:hover {
+      background-color: #BBBBBA;
+      color: white;
+  }
+
+/* delete button */
+  .deleteButton {
+      float: right;
+  }
+
+  .deleteButton:hover {
+      background-color: #BBBBBA;
+      color: white;
+      display: inline-block;
+  }
+
+ /* strike*/
+  ul li.strike {
+      background: #888;
+      text-decoration: line-through;
+  }

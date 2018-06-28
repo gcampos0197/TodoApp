@@ -3,7 +3,7 @@ function addListItem(input) {
   console.log(input);
   if(input === ''){
     alert('Please enter a to do item.')
-  } else {
+  } else  {
     var li = document.createElement('li');
     var ul = document.getElementById('todo_list');
     var text = document.createTextNode(input);
